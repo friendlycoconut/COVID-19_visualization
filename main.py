@@ -229,7 +229,7 @@ app.layout = html.Div([
                              {'label': 'Deaths per week', 'value': 'deaths_weekly_count'},
                              {'label': 'Cases per week', 'value': 'cases_weekly_count'}
                          ],
-                         value='cases',
+                         value='cases_weekly_count',
 
                          ),
         ], className='six columns'),
@@ -274,7 +274,7 @@ def update_data(chosen_rows, piedropval, linedropval):
     subset_dfdata_cases
 
     if len(chosen_rows) == 0:
-        changed_df_filtered = changed_df[changed_df['country'].isin(['China', 'Australia', 'Spain', 'Italy'])]
+        changed_df_filtered = changed_df[changed_df['country'].isin(['Slovakia'])]
         df_filterd = dff[dff['countriesAndTerritories'].isin(['China'])]
     else:
         print(chosen_rows)
