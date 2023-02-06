@@ -1,4 +1,4 @@
-# pythonProject1
+# covid 19 visualization
 
 this project uses Plotly methods of visualisation.
 
